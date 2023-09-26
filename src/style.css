@@ -1,0 +1,66 @@
+body{
+    background-image: url('./bgweather.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#content{
+    margin: auto;
+    width: 80%;
+    height: 100%;
+}
+#inputarea{
+    margin: auto;
+    align-self: center;
+    width: min(70vw, 400px);
+}
+#background{
+    width: min(70vw, 400px);
+    border-radius: 10px;
+    background-color: rgb(128, 128, 128, .2);
+    padding: 5px;
+    margin: auto;
+    border: solid black 1px;
+    position: relative;
+    animation: ease-in;
+}
+#weatherImg{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top:5px;
+    right: 5px;
+}
+.load_small{
+    height: 50px;
+    width: 50px;
+}
+#tempText{
+    height: 30%;
+    width: 40%;
+    font-size: min(10vh, 10vw);
+}
+
+#tempText,#windText,#feelText{
+    margin:3px 0px;
+}
+#windText{
+    margin-bottom: 20px;
+}
+#weatherImg, #weatherText, #tempText, #feelText, #windText{
+    -webkit-transition: opacity .4s ease .4s;
+    transition: opacity .4s ease .4s;
+}
+#forecast{
+    display: flex;
+    font-size: max(1vh, 8pt);
+    text-align: center;
+}
+.forecastday{
+    margin: 0 5px;
+    flex: 1 1 0;
+}
+.forecastday>img{
+    width: 40px;
+    height: 40px;
+}
